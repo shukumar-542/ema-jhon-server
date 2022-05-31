@@ -24,6 +24,9 @@ client.connect(err => {
               console.log(result);
         })
   })
+      app.get('/', (req,res)=>{
+            res.send("Hello duds it's working DB")
+      })
 
       app.get('/products',(req,res)=>{
             collection.find({})
